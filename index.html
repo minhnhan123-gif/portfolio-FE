@@ -14,6 +14,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.5.1/uicons-brands/css/uicons-brands.css'>
+  <link rel="stylesheet" href="./assets/css/reponsive.css">
   <title>Frontend Developer</title>
 </head>
 <body>
@@ -23,7 +24,7 @@
           <div class="logo-tagname col-4">
             <img class="logo-tagname__img" src="assets/img/signature.png" alt="">
           </div>
-          <nav class="header__navbar col-8">
+          <nav class="header__navbar col-8 menu-mobile">
             <ul class="header__list">
               <li><a class="header__list-item" href="#Home">Home</a></li>
               <li><a class="header__list-item" href="#About">About</a></li>
@@ -35,7 +36,7 @@
     </header>
     <div id="Home" class="section">
       <div class="description">
-        <p class="description__text">Hi, my name is<p class="description__text" style="font-weight: 700; font-family: 'Lato';">Minh Nhân</p></p>
+        <p class="description__text">Hi, my name is<p class="description__text-name">Minh Nhân</p></p>
         <div class="description__sub">
           <p class="description__sub-text">I'm a Front-End Developer</p>
         </div>
@@ -48,11 +49,14 @@
           <span>L</span>
         </div>
       </div>
-      <!-- <div class="circle-description">
+      <div class="circle-description">
         <div class="circle-behide">
   
         </div>
-      </div> -->
+        <div class="circle-behide-2">
+  
+        </div>
+      </div>
     </div>
     <div id="About" class="">
       <div class="about__container">
@@ -89,21 +93,25 @@
     <div id="Contact" class="section">
       <div class="contact__contaniner">
         <div class="row">
-          <div class="contact__title col-4">
+          <div class="contact__title">
             CONTACT
           </div>
-          <ul class="social-links col-8 section">
+          <ul class="social-links section">
             <li class="social-link__item">
-              <a href="https://www.facebook.com/profile.php?id=100051583754251" class="social-link__link social-link__link-FB"></a>
+              <a href="https://www.facebook.com/profile.php?id=100051583754251" class="social-link__link social-link__link-FB">Facebook</a>
+              <span>Facebook</span>
             </li>
             <li class="social-link__item">
-              <a href="mailto:nhand7476@gmail.com" class="social-link__link social-link__link-mail"></a>
+              <a href="mailto:nhand7476@gmail.com" class="social-link__link social-link__link-mail">Email</a>
+              <span>Email</span>
             </li>
             <li class="social-link__item">
               <a href="https://github.com/minhnhan123-gif" class="social-link__link social-link__link-GH"></a>
+              <span>Github</span>
             </li>
             <li class="social-link__item">
               <a href="https://www.linkedin.com/in/nh%C3%A2n-l%C3%AA-3bba4a2ab/" class="social-link__link social-link__link-ln"></a>
+              <span>Linkedin</span>
             </li>
           </ul>
         </div>

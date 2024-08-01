@@ -1,0 +1,16 @@
+@media (max-width: 600px) {
+
+  .logo-tagname {
+    display: none;
+  }
+  .header__navbar {
+    display: flex;
+    width: 40vh;
+    justify-content: space-between;
+  }
+  .description__sub-text {
+    animation: blink-caret 0.75s step-end infinite alternate-reverse;;
+  }
+}
+
+

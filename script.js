@@ -31,4 +31,18 @@ document.addEventListener('DOMContentLoaded', () => {
     startAnimate()
     setInterval(startAnimate, 4000)
   }
-});
+})
+
+document.addEventListener('scroll', () => {
+  const pageScroll = document.querySelector('.page-scroll')
+  const scrollTop = window.pageYOffset || document.documentElement.scrollTop
+  const fadeOutTop = 700
+  
+  if (scrollTop < fadeOutTop)
+  { pageScroll.style.opacity = 1 -scrollTop / fadeOutTop
+
+  }
+  else {
+    pageScroll.style.opacity = 0
+  }
+})
