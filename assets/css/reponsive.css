@@ -11,6 +11,42 @@
   .description__sub-text {
     animation: blink-caret 0.75s step-end infinite alternate-reverse;;
   }
+
+  .circle-behide, .circle-behide-2 {
+    display: none;
+  }
+  .about__description, .projects__description {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 100px;
+  }
+  .about__description.show-animate, .projects__description.show-animate {
+    animation: none;
+  }
+  .projects__title {
+    margin-left: 50px;
+  }
+  .about__title {
+    margin-left: 20px;
+  }
+  .social-link__item span {
+    display: none;
+  }
+  .social-link__link {
+    height: 36px;
+    width: 36px;
+  }
 }
-
-
+@keyframes text-animate {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

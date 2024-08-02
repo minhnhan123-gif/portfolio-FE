@@ -46,3 +46,12 @@ document.addEventListener('scroll', () => {
     pageScroll.style.opacity = 0
   }
 })
+
+document.addEventListener("DOMContentLoaded", () => {
+  const loadingscreen = document.getElementById('loading-screen')
+  const app = document.getElementById('app')    
+  window.addEventListener('load', () => {
+    loadingscreen.style.display = 'none'
+    app.style.display = 'block'
+  })
+})
