@@ -180,4 +180,14 @@ html {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
-
+@keyframes text-animate {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

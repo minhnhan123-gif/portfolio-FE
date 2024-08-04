@@ -11,9 +11,20 @@
   .description__sub-text {
     animation: blink-caret 0.75s step-end infinite alternate-reverse;;
   }
-
+  .description__text {
+    margin-top: 250px;
+  }
+  .description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -100px;
+  }
   .circle-behide, .circle-behide-2 {
     display: none;
+  }
+  .page-scroll {
+    left: 33%;
   }
   .about__description, .projects__description {
     display: flex;
@@ -26,10 +37,10 @@
     animation: none;
   }
   .projects__title {
-    margin-left: 50px;
+    margin-left: 60px;
   }
   .about__title {
-    margin-left: 20px;
+    margin-left: 30px;
   }
   .social-link__item span {
     display: none;
@@ -38,15 +49,18 @@
     height: 36px;
     width: 36px;
   }
-}
-@keyframes text-animate {
-  0% {
-    transform: translateY(0);
+  .about__title-img, .projects__title-img {
+    display: none;
   }
-  50% {
-    transform: translateY(-10px);
+
+  .description__image {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    left: 25%;
   }
-  100% {
-    transform: translateY(0);
+  .description__text-name {
+    display: flex;
+    align-items: center;
   }
 }
