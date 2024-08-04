@@ -281,7 +281,12 @@
   display: flex;
   justify-content: center;
   color: var(--indigo);
-  flex: 1;
+  font-weight: bold;
+  -webkit-background-clip: text;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  letter-spacing: 2px;
+  animation: text-animate 3s ease-in-out infinite;
+  z-index: 1000;
 }
 .contact__title.show-animate {
   animation: slideinleft 0.5s ease-in;
