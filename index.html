@@ -21,27 +21,29 @@
   <div id="loading-screen">
     <div class="loaded"></div>
   </div>
-  <div id="app" class="container">
-    <header class="header">
-        <div class="row"> 
-          <div class="logo-tagname col-4">
-            <img class="logo-tagname__img" src="assets/img/signature.png" alt="">
+  <div id="app">
+    <div class="container">
+      <header class="header">
+          <div class="row"> 
+            <div class="logo-tagname col-4">
+              <img class="logo-tagname__img" src="assets/img/signature.png" alt="">
+            </div>
+            <nav class="header__navbar col-8 menu-mobile">
+              <ul class="header__list">
+                <li><a class="header__list-item" href="#Home">Home</a></li>
+                <li><a class="header__list-item" href="#About">About</a></li>
+                <li><a class="header__list-item" href="#Projects">Projects</a></li>
+                <li><a  class="header__list-item" href="#Contact">Contact</a></li>
+              </ul>
+            </nav>
           </div>
-          <nav class="header__navbar col-8 menu-mobile">
-            <ul class="header__list">
-              <li><a class="header__list-item" href="#Home">Home</a></li>
-              <li><a class="header__list-item" href="#About">About</a></li>
-              <li><a class="header__list-item" href="#Projects">Projects</a></li>
-              <li><a  class="header__list-item" href="#Contact">Contact</a></li>
-            </ul>
-          </nav>
-        </div>
-    </header>
-    <div id="Home" class="section">
-      <div class="description">
-        <p class="description__text">Hi, my name is<p class="description__text-name">Minh Nhân</p></p>
-        <div class="description__sub">
-          <p class="description__sub-text">I'm a Front-End Developer</p>
+      </header>
+      <div id="Home" class="section">
+        <div class="description row">
+          <p class="description__text">Hi, my name is<p class="description__text-name">Minh Nhân</p></p>
+          <div class="description__sub">
+            <p class="description__sub-text">I'm a Front-End Developer</p>
+          </div>
         </div>
         <div class="page-scroll">
           <span>S</span>
@@ -51,72 +53,77 @@
           <span>L</span>
           <span>L</span>
         </div>
-      </div>
-      <div class="circle-description">
-        <div class="circle-behide">
-  
+        <div >
+          <img src="./assets/img/Vũng Tàu_02.jpg" alt="avatar" class="description__image">
         </div>
-        <div class="circle-behide-2">
-  
-        </div>
-      </div>
-    </div>
-    <div id="About" class="">
-      <div class="about__container">
-        <div class="row">
-          <div class="about__title col-4">
-            ABOUT
+        <div class="circle-description">
+          <div class="circle-behide">
+    
           </div>
-          <div class="about__description col-8 section">
-            <p>I recently graduated from Tôn Đức Thắng University with a major in Electronics and Telecommunications. I am seeking intern or fresher position in Front-End development.</p>
-            <p>My short-term goal is to find a company where I can learn from experienced professionals and understand the work processes of Front-End development. My long-term goal is to become an excellent Front-End Developer and contribute significantly to the company.</p>
-            <p>I am eager to gain practical experience and develop my Front-End programming skills through projects and specialized courses. I also aim to expand my professional network in the industry and obtain relevant certifications in Front-End development.</p>
+          <div class="circle-behide-2">
+    
           </div>
         </div>
       </div>
-    </div>
-    <div id="Projects" class="section">
-      <div class="projects__container">
-        <div class="row">
-          <div class="projects__title col-4">
-            PROJECTS
-          </div>
-          <div class="projects__description col-8 section">
-            <p class="header6">Building an Automated Queue Ticket System Integrated with QR Extraction from Citizen ID (CCCD)</p>
-            <p>Job Description:</p>
-            <p>Frontend: Designed user interfaces with HTML, CSS, JavaScript, and ReactJS.</p>
-            <p>Backend: Built server and database using Node.js and Express.</p>
-            <p>API: Developed RESTful API, integrated QR extraction from Citizen ID (CCCD).
-            Project Management: Coordinated team according to Agile processes, tested and deployed the system.</p>
-            <p>Technologies used: HTML, CSS, JavaScript, ReactJS, Node.js, Express, MongoDB, QR Code API, Git.</p>
+      <div id="About" class="">
+        <div class="about__container">
+          <div class="row">
+            <div class="about__title col-4">
+              ABOUT
+              <img src="assets/img/people.png" alt="" class="about__title-img">
+            </div>
+            <div class="about__description col-8 section">
+              <p>I recently graduated from Tôn Đức Thắng University with a major in Electronics and Telecommunications. I am seeking intern or fresher position in Front-End development.</p>
+              <p>My short-term goal is to find a company where I can learn from experienced professionals and understand the work processes of Front-End development. My long-term goal is to become an excellent Front-End Developer and contribute significantly to the company.</p>
+              <p>I am eager to gain practical experience and develop my Front-End programming skills through projects and specialized courses. I also aim to expand my professional network in the industry and obtain relevant certifications in Front-End development.</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div id="Contact" class="section">
-      <div class="contact__contaniner">
-        <div class="row">
-          <div class="contact__title">
-            CONTACT
+      <div id="Projects" class="section">
+        <div class="projects__container">
+          <div class="row">
+            <div class="projects__title col-4">
+              PROJECTS
+              <img src="assets/img/satelite.png" alt="" class="projects__title-img">
+            </div>
+            <div class="projects__description col-8 section">
+              <p class="header6">Building an Automated Queue Ticket System Integrated with QR Extraction from Citizen ID (CCCD)</p>
+              <p>Job Description:</p>
+              <p>Frontend: Designed user interfaces with HTML, CSS, JavaScript, and ReactJS.</p>
+              <p>Backend: Built server and database using Node.js and Express.</p>
+              <p>API: Developed RESTful API, integrated QR extraction from Citizen ID (CCCD).
+              Project Management: Coordinated team according to Agile processes, tested and deployed the system.</p>
+              <p>Technologies used: HTML, CSS, JavaScript, ReactJS, Node.js, Express, MongoDB, QR Code API, Git.</p>
+            </div>
           </div>
-          <ul class="social-links section">
-            <li class="social-link__item">
-              <a href="https://www.facebook.com/profile.php?id=100051583754251" class="social-link__link social-link__link-FB">Facebook</a>
-              <span>Facebook</span>
-            </li>
-            <li class="social-link__item">
-              <a href="mailto:nhand7476@gmail.com" class="social-link__link social-link__link-mail">Email</a>
-              <span>Email</span>
-            </li>
-            <li class="social-link__item">
-              <a href="https://github.com/minhnhan123-gif" class="social-link__link social-link__link-GH"></a>
-              <span>Github</span>
-            </li>
-            <li class="social-link__item">
-              <a href="https://www.linkedin.com/in/nh%C3%A2n-l%C3%AA-3bba4a2ab/" class="social-link__link social-link__link-ln"></a>
-              <span>Linkedin</span>
-            </li>
-          </ul>
+        </div>
+      </div>
+      <div id="Contact" class="section">
+        <div class="contact__contaniner">
+          <div class="row">
+            <div class="contact__title">
+              CONTACT
+            </div>
+            <ul class="social-links section">
+              <li class="social-link__item">
+                <a href="https://www.facebook.com/profile.php?id=100051583754251" class="social-link__link social-link__link-FB">Facebook</a>
+                <span>Facebook</span>
+              </li>
+              <li class="social-link__item">
+                <a href="mailto:nhand7476@gmail.com" class="social-link__link social-link__link-mail">Email</a>
+                <span>Email</span>
+              </li>
+              <li class="social-link__item">
+                <a href="https://github.com/minhnhan123-gif" class="social-link__link social-link__link-GH"></a>
+                <span>Github</span>
+              </li>
+              <li class="social-link__item">
+                <a href="https://www.linkedin.com/in/nh%C3%A2n-l%C3%AA-3bba4a2ab/" class="social-link__link social-link__link-ln"></a>
+                <span>Linkedin</span>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

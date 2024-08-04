@@ -1,6 +1,13 @@
 #app {
+  margin: 0;
+  font-family: var(--bs-body-font-family);
+  font-size: var(--bs-body-font-size);
+  font-weight: var(--bs-body-font-weight);
+  line-height: var(--bs-body-line-height);
+  color: var(--bs-body-color);
+  text-align: var(--bs-body-text-align);
   background-color: #f4f9fc;
-} 
+}
 .loaded {
   border: 16px solid #f3f3f3; /* Light grey */
   border-top: 16px solid #3498db; /* Blue */
@@ -21,6 +28,7 @@
 .header {
   height: 85px;
   position: fixed;
+  z-index: 1001;
 }
 .header__navbar {
   display: flex;
@@ -90,7 +98,8 @@
   font-size: 50px;
   margin-bottom: 0;
   font-weight: 400;
-  color: #0f1b61
+  color: #0f1b61;
+  margin-left: 100px;
 }
 .description__sub {
   height: 70px; /* Đặt chiều cao phù hợp với kích thước phông chữ */
@@ -98,8 +107,7 @@
   width: 100%; /* Đặt chiều rộng là 100% */
   position: relative; /* Đặt vị trí tương đối cho con trỏ */
   display: flex;
-  justify-content: center;
-  
+  margin-left: 100px;
 }
 
 .description__sub-text {
@@ -116,6 +124,9 @@
 .page-scroll {
   position: absolute;
   bottom: 50px;
+  left: 25%;
+  font-size: 16px;
+  font-weight: 300;
 }
 .page-scroll::after {
   height: 150px;
@@ -144,23 +155,32 @@
   display: flex;
   position: absolute;
   top: 33%;
-  left: 33%;
+  right: 10%;
   align-items: center;
 }
 .description__text-name:hover {
   cursor: pointer;
-  animation: bounce 1s forwards;
 }
 .description__text-name {
   font-weight: 900; font-family: 'Lato';
-  font-size: 80px;
+  font-size: 48px;
   color: var(--indigo);
+  margin-left: 100px;
+
+}
+.description__image {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  right: 20%;
+  top: 25%;
+  border-radius: 100%;
+  box-shadow: 4px 4px #000;
 }
 .circle-behide {
   width: 500px;
   height: 250px;
   animation: spin 36s ease-in infinite;
-  opacity: 0.3;
   border: solid 1px var(--indigo);
   box-shadow: -10px -5px var(--indigo) ;
   border-radius: 100%;
@@ -169,8 +189,7 @@
 .circle-behide-2 {
   width: 250px;
   height: 500px;
-  animation: spin 36s ease-in infinite;
-  opacity: 0.3;
+  animation: spinRe 36s ease-in infinite;
   border: solid 1px var(--indigo);
   box-shadow: -10px -5px var(--indigo) ;
   border-radius: 100%;
@@ -196,8 +215,15 @@
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
   letter-spacing: 2px;
   animation: text-animate 3s ease-in-out infinite;
+  z-index: 1000;
 }
-
+.about__title-img {
+  height: 300px;
+  width: 300px;
+  position: absolute ;
+  z-index: -1;
+  top: 60px;
+}
 .about__title.show-animate {
   animation: slideinleft 0.5s ease-in;
 }
@@ -228,6 +254,13 @@
 }
 .projects__description {
   font-size: 18px;
+}
+.projects__title-img {
+  height: 300px;
+  width: 300px;
+  position: absolute ;
+  z-index: -1;
+  top: 60px;
 }
 .projects_title.show-animate {
   animation: slideinleft 0.5s ease-in;
