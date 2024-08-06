@@ -64,3 +64,32 @@
     
   }
 }
+/* iPad Portrait */
+
+
+/* iPad Landscape */
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  body {
+    font-size: 17px;
+  }
+  .description, .about__container, .projects__container {
+    height: 60vh;
+  }
+  .description__image {
+    width: 400px;
+    height: 400px;
+  }
+  .description__text, .description__text-name {
+    font-size: 36px;
+    padding: 0 0;
+    margin-left: -5px;
+  }
+  .description__sub {
+    font: 24px;
+    margin-left: -10px;
+  }
+  .description__image {
+    top: 17%;
+    right: 10%;
+  }
+}

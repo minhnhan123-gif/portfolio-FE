@@ -55,3 +55,43 @@ document.addEventListener("DOMContentLoaded", () => {
     app.style.display = 'block'
   })
 })
+
+//cursor tracking
+const coords = {x: 0, y: 0}
+const circles = document.querySelectorAll('.circle')
+const colors = ["#6610f2", "#5314de", "#441ac8","#381fb3", "#2f239f", "#29268c", "#282c7a", "#29306a", "#29325a", "#28314b", "#252d3e", "#222831"]
+circles.forEach((circle, index) => {
+  circle.x = 0
+  circle.y = 0
+  circle.style.backgroundColor = colors[index % colors.length]
+})
+window.addEventListener("mousemove", (e) => {
+  coords.x = e.clientX;
+  coords.y = e.clientY;
+  animateCircle();
+})
+
+function animateCircle() {
+    let x = coords.x
+    let y = coords.y
+
+    circles.forEach((circle, index) => {
+      circle.style.left = x - 12 + 'px'
+      circle.style.top = y - 12 + 'px'
+      
+      circle.style.scale = [circles.length - index] / circles.length
+      
+      circle.x = x
+      circle.y = y
+
+
+      const nextCircle = circles[index + 1] || circle[0]
+      x += (nextCircle.x - x) * 0.5
+      y += (nextCircle.y - y) * 0.5
+
+    })
+
+  requestAnimationFrame(animateCircle)
+
+}
+
